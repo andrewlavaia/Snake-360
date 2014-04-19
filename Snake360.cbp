@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Snake360" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Runner" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-audio-s-d" />
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-system-s-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Snake360" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="G:/C++/Snake 360/" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-audio-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="G:/C++/SFML-2.1/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="G:/C++/SFML-2.1/lib" />
+		</Linker>
+		<Unit filename="controlmode.cpp" />
+		<Unit filename="controlmode.h" />
+		<Unit filename="gameengine.cpp" />
+		<Unit filename="gameengine.h" />
+		<Unit filename="gamemode.cpp" />
+		<Unit filename="gamemode.h" />
+		<Unit filename="gamestate.h" />
+		<Unit filename="highscorestate.cpp" />
+		<Unit filename="highscorestate.h" />
+		<Unit filename="introstate.cpp" />
+		<Unit filename="introstate.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="menustate.cpp" />
+		<Unit filename="menustate.h" />
+		<Unit filename="playstate.cpp" />
+		<Unit filename="playstate.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
